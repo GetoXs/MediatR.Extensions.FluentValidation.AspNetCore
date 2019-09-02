@@ -1,7 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mateusz Przybylek</Authors>
+    <Copyright>Copyright (c) Mateusz Przybylek</Copyright>
+    <Description>MediatR intgration with FluentValidation validation library using ASP.NET Core.</Description>
+    <PackageIconUrl>https://raw.githubusercontent.com/jbogard/MediatR/master/assets/logo/gradient_128x128.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore</PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\MediatR.Extensions.FluentValidation.AspNetCore.snk</AssemblyOriginatorKeyFile>
+    <Company />
+    <PackageTags>mediatr,FluentValidation,asp,dot,net.core</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
