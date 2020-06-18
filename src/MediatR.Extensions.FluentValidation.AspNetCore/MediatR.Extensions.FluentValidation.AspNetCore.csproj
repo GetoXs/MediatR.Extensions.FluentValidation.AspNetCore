@@ -6,7 +6,6 @@
     <Authors>Mateusz Przybylek</Authors>
     <Copyright>Copyright (c) Mateusz Przybylek</Copyright>
     <Description>MediatR intgration with FluentValidation validation library using ASP.NET Core.</Description>
-    <PackageIconUrl>https://raw.githubusercontent.com/jbogard/MediatR/master/assets/logo/gradient_128x128.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore</PackageProjectUrl>
     <PackageLicenseUrl></PackageLicenseUrl>
@@ -18,6 +17,7 @@
     <PackageTags>mediatr,FluentValidation,asp,dot,net.core</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Version>1.0.1</Version>
+    <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,6 +25,13 @@
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="8.2.2" />
     <PackageReference Include="MediatR" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
