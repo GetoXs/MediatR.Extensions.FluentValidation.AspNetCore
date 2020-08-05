@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Mateusz Przybylek</Authors>
     <Copyright>Copyright (c) Mateusz Przybylek</Copyright>
     <Description>MediatR intgration with FluentValidation validation library using ASP.NET Core.</Description>
@@ -11,13 +10,18 @@
     <PackageLicenseUrl></PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\..\..\MediatR.Extensions.FluentValidation.AspNetCore.snk</AssemblyOriginatorKeyFile>
     <Company />
     <PackageTags>mediatr,FluentValidation,asp,dot,net.core</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Version>1.0.3</Version>
     <PackageIcon>logo.png</PackageIcon>
+    <Configurations>Debug;Release;SignAndRelease</Configurations>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)' == 'SignAndRelease'">
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\MediatR.Extensions.FluentValidation.AspNetCore.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

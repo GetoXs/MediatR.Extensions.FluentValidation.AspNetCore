@@ -5,22 +5,27 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR.Extensions.FluentValidation.AspNetCore", "MediatR.Extensions.FluentValidation.AspNetCore\MediatR.Extensions.FluentValidation.AspNetCore.csproj", "{C1F4B44A-A84C-45AA-8D42-A2EC82AF835F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatR.Extensions.FluentValidation.AspNetCore.Tests", "MediatR.Extensions.FluentValidation.AspNetCore.Tests\MediatR.Extensions.FluentValidation.AspNetCore.Tests.csproj", "{799E1869-6704-47F3-9FA4-FB9A759DC6CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR.Extensions.FluentValidation.AspNetCore.Tests", "MediatR.Extensions.FluentValidation.AspNetCore.Tests\MediatR.Extensions.FluentValidation.AspNetCore.Tests.csproj", "{799E1869-6704-47F3-9FA4-FB9A759DC6CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SignAndRelease|Any CPU = SignAndRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C1F4B44A-A84C-45AA-8D42-A2EC82AF835F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C1F4B44A-A84C-45AA-8D42-A2EC82AF835F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1F4B44A-A84C-45AA-8D42-A2EC82AF835F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1F4B44A-A84C-45AA-8D42-A2EC82AF835F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F4B44A-A84C-45AA-8D42-A2EC82AF835F}.SignAndRelease|Any CPU.ActiveCfg = SignAndRelease|Any CPU
+		{C1F4B44A-A84C-45AA-8D42-A2EC82AF835F}.SignAndRelease|Any CPU.Build.0 = SignAndRelease|Any CPU
 		{799E1869-6704-47F3-9FA4-FB9A759DC6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{799E1869-6704-47F3-9FA4-FB9A759DC6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{799E1869-6704-47F3-9FA4-FB9A759DC6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{799E1869-6704-47F3-9FA4-FB9A759DC6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799E1869-6704-47F3-9FA4-FB9A759DC6CF}.SignAndRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{799E1869-6704-47F3-9FA4-FB9A759DC6CF}.SignAndRelease|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
