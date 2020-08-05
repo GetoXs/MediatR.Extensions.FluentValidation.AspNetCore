@@ -6,7 +6,11 @@
 
 MediatR extension for FluentValidation using asp.net core
 
-### Install with nuget
+# Install
+
+A priori you need to install packages [Mediatr](https://github.com/jbogard/MediatR) and [FluentValidation](https://github.com/FluentValidation/FluentValidation) then continue below
+
+## Install with nuget
 
 ```
 Install-Package MediatR.Extensions.FluentValidation.AspNetCore
@@ -42,17 +46,31 @@ public void ConfigureServices(IServiceCollection services)
 
 ```
 
-
 ## Use
+
+Just to write down validators for `IRequest` implementation. Validation will be executed before handling `IRequestHandler`.
 
 ```csharp
 
-public class GenerateInvoiceValidator : AbstractValidator<GenerateInvoiceCommand>
+public class GenerateInvoiceValidator : AbstractValidator<GenerateInvoiceRequest>
 {
-    public Valid()
+    public GenerateInvoiceValidator()
     {
         RuleFor(x => x.Month).LowerThan(13);
         // etc.
+    }
+}
+
+public class GenerateInvoiceRequest : IRequest
+{
+    public int Month { get; set; }
+}
+public class GenerateInvoiceRequestHandler : IRequestHandler<GenerateInvoiceRequest>
+{
+    public async Task<Unit> Handle(GenerateInvoiceRequest request, CancellationToken cancellationToken)
+    {
+        // request data has been validated
+        ...
     }
 }
 ```
