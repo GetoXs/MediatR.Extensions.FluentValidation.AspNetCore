@@ -63,6 +63,5 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore.Tests
         {
             return await Unit.Task;
         }
-
     }
 }

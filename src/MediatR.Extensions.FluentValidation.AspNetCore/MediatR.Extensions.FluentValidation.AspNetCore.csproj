@@ -13,7 +13,7 @@
     <Company />
     <PackageTags>mediatr,FluentValidation,asp,dot,net.core</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.0.3</Version>
+    <Version>1.1</Version>
     <PackageIcon>logo.png</PackageIcon>
     <Configurations>Debug;Release;SignAndRelease</Configurations>
   </PropertyGroup>
