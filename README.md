@@ -1,5 +1,6 @@
 # MediatR.Extensions.FluentValidation.AspNetCore
 
+[![GitHub Actions Status](https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore/workflows/Build%20&%20Test/badge.svg)](https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore/actions)
 [![NuGet](https://img.shields.io/nuget/dt/MediatR.Extensions.FluentValidation.AspNetCore.svg)](https://www.nuget.org/packages/MediatR.Extensions.FluentValidation.AspNetCore) 
 [![NuGet](https://img.shields.io/nuget/vpre/MediatR.Extensions.FluentValidation.AspNetCore.svg)](https://www.nuget.org/packages/MediatR.Extensions.FluentValidation.AspNetCore)
 [![license](https://img.shields.io/github/license/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore.svg)](https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore/blob/master/lICENSE)
