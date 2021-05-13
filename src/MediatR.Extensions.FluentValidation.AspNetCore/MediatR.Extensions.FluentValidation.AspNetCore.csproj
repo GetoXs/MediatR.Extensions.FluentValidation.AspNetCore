@@ -25,8 +25,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="9.0.1" />
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.0.1" />
+    <PackageReference Include="FluentValidation" Version="10.0.4" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.0.4" />
     <PackageReference Include="MediatR" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.0" />
   </ItemGroup>
