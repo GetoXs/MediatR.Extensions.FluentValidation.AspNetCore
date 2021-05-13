@@ -7,6 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR.Extensions.FluentVa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR.Extensions.FluentValidation.AspNetCore.Tests", "MediatR.Extensions.FluentValidation.AspNetCore.Tests\MediatR.Extensions.FluentValidation.AspNetCore.Tests.csproj", "{799E1869-6704-47F3-9FA4-FB9A759DC6CF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{3929185B-03F0-4FD3-911F-5203B813ED86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{789A2911-84DF-443D-AF2D-5829BC0C11AB}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\dotnet-core.yml = ..\.github\workflows\dotnet-core.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +36,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{789A2911-84DF-443D-AF2D-5829BC0C11AB} = {3929185B-03F0-4FD3-911F-5203B813ED86}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9E26F24-3F7E-45D0-B1A8-F52FDFFDFA96}
