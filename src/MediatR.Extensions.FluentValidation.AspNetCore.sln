@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29215.179
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR.Extensions.FluentValidation.AspNetCore", "MediatR.Extensions.FluentValidation.AspNetCore\MediatR.Extensions.FluentValidation.AspNetCore.csproj", "{C1F4B44A-A84C-45AA-8D42-A2EC82AF835F}"
 EndProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{3929
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{789A2911-84DF-443D-AF2D-5829BC0C11AB}"
 	ProjectSection(SolutionItems) = preProject
-		..\.github\workflows\dotnet-core.yml = ..\.github\workflows\dotnet-core.yml
+		..\.github\workflows\build-and-test.yml = ..\.github\workflows\build-and-test.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B03E2AC-3064-4A2C-B610-24F378EE82D2}"
