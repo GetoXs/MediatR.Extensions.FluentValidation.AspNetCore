@@ -26,7 +26,9 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore.Tests
             sc.AddFluentValidation(new[] { domainAssembly });
 
             Services = sc.BuildServiceProvider();
-            Mediator = Services.GetService<IMediator>();
+            Mediator = Services.GetService<IMediator>()!;
+
+            Assert.NotNull(Mediator);
         }
 
         [Fact]
@@ -49,7 +51,6 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore.Tests
             RuleFor(x => x.Discount).GreaterThanOrEqualTo(0);
         }
     }
-
 
     public class Command : IRequest
     {
