@@ -48,14 +48,16 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore.Tests
     {
         public CommandValidation()
         {
-            RuleFor(x => x.Discount).GreaterThanOrEqualTo(0);
+            RuleFor(x => x.Discount)
+                .GreaterThanOrEqualTo(0)
+                .MustAsync(async (_, __) => await Task.Delay(0).ContinueWith(x => true));
         }
     }
 
     public class Command : IRequest
-    {
+    {		
         public decimal Discount { get; set; }
-
+		
     }
 
     public class CommandHandler : IRequestHandler<Command>
