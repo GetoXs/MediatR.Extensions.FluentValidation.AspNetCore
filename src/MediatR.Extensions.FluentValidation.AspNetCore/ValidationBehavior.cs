@@ -16,13 +16,14 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore
             _validators = validators;
         }
 
-        public Task<TResponse> Handle(TRequest request
+        public async Task<TResponse> Handle(TRequest request
             , CancellationToken cancellationToken
             , RequestHandlerDelegate<TResponse> next
         )
         {
-            var failures = _validators
-                .Select(v => v.Validate(request))
+            var failures =
+                (await Task.WhenAll(_validators.Select(async v => await v.ValidateAsync(request, cancellationToken))))
+                .Where(result => result != null)
                 .SelectMany(result => result.Errors)
                 .Where(f => f != null)
                 .ToList();
@@ -32,7 +33,7 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore
                 throw new ValidationException(failures);
             }
 
-            return next();
+            return await next();
         }
     }
 }
