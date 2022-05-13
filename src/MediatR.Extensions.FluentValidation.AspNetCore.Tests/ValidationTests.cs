@@ -55,9 +55,9 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore.Tests
     }
 
     public class Command : IRequest
-    {		
+    {
         public decimal Discount { get; set; }
-		
+
     }
 
     public class CommandHandler : IRequestHandler<Command>
