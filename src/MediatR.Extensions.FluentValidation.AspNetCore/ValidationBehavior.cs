@@ -17,8 +17,8 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore
         }
 
         public Task<TResponse> Handle(TRequest request
-            , CancellationToken cancellationToken
             , RequestHandlerDelegate<TResponse> next
+            , CancellationToken cancellationToken
         )
         {
             var failures = _validators
