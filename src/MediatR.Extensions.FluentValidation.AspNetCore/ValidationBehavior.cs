@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace MediatR.Extensions.FluentValidation.AspNetCore
 {
     public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
-        where TRequest : IRequest<TResponse>
+        where TRequest : class, IBaseRequest
     {
         private readonly IEnumerable<IValidator<TRequest>> _validators;
 
