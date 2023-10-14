@@ -4,12 +4,12 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Authors>Mateusz Przybylek</Authors>
     <Copyright>Copyright (c) Mateusz Przybylek</Copyright>
-    <Description>MediatR intgration with FluentValidation validation library using ASP.NET Core.</Description>
+    <Description>MediatR extension to FluentValidation for .NET framework.</Description>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageTags>mediatr,FluentValidation,asp,dot,net.core</PackageTags>
+    <PackageTags>mediatr,fluentvalidation,mediatr-extension,dotnet,aspnetcore,dotnetcore</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
