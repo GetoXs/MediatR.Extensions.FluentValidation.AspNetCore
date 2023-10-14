@@ -5,11 +5,11 @@
 [![NuGet](https://img.shields.io/nuget/vpre/MediatR.Extensions.FluentValidation.AspNetCore.svg)](https://www.nuget.org/packages/MediatR.Extensions.FluentValidation.AspNetCore)
 [![license](https://img.shields.io/github/license/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore.svg)](https://github.com/GetoXs/MediatR.Extensions.FluentValidation.AspNetCore/blob/master/LICENSE)
 
-MediatR extension for FluentValidation using asp.net core
+MediatR extension to the FluentValidation for .NET framework
 
 # Install
 
-A priori you need to install packages [Mediatr](https://github.com/jbogard/MediatR) and [FluentValidation](https://github.com/FluentValidation/FluentValidation) then continue below
+First you need to install packages [Mediatr](https://github.com/jbogard/MediatR) and [FluentValidation](https://github.com/FluentValidation/FluentValidation), then follow the instructions below
 
 ## Install with nuget
 
@@ -49,7 +49,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ## Use
 
-Just to write down validators for `IRequest` implementation. Validation will be executed before handling `IRequestHandler`.
+Implement validator for your `IRequest` objects. Validation will be executed before handling `IRequestHandler`.
 
 ```csharp
 
