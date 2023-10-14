@@ -36,7 +36,7 @@ public void ConfigureServices(IServiceCollection services)
     
     var domainAssembly = typeof(GenerateInvoiceHandler).GetTypeInfo().Assembly;
     // Add MediatR
-    services.AddMediatR(domainAssembly);
+    services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(domainAssembly));
 
     //Add FluentValidation
     services.AddFluentValidation(new[] {domainAssembly});
@@ -68,7 +68,7 @@ public class GenerateInvoiceRequest : IRequest
 }
 public class GenerateInvoiceRequestHandler : IRequestHandler<GenerateInvoiceRequest>
 {
-    public async Task<Unit> Handle(GenerateInvoiceRequest request, CancellationToken cancellationToken)
+    public async Task Handle(GenerateInvoiceRequest request, CancellationToken cancellationToken)
     {
         // request data has been validated
         ...

@@ -20,7 +20,7 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore.Tests
             var domainAssembly = typeof(ValidationTests).GetTypeInfo().Assembly;
 
             // Add MediatR
-            sc.AddMediatR(domainAssembly);
+            sc.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(domainAssembly));
 
             //Add FluentValidation
             sc.AddFluentValidation(new[] { domainAssembly });
@@ -60,9 +60,9 @@ namespace MediatR.Extensions.FluentValidation.AspNetCore.Tests
 
     public class CommandHandler : IRequestHandler<Command>
     {
-        public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
+        public Task Handle(Command request, CancellationToken cancellationToken)
         {
-            return await Unit.Task;
+            return Task.CompletedTask;
         }
     }
 }
